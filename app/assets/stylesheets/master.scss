@@ -34,6 +34,8 @@
   padding-top: 26px;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'quicksanddash', sans-serif;
+  font-weight: bold;
 }
 
 header {
@@ -42,4 +44,25 @@ header {
 
 hr {
   clear:both;
+}
+
+h1 {
+  font-family: 'quicksanddash', sans-seriff;
+  font-weight: bold;
+  font-size: 48;
+}
+
+h {
+  font-family: 'quicksanddash', sans-seriff;
+  font-weight: bold;
+  font-size: 48;
+}
+
+
+.links a {
+  color: black;
+  font-size: 25px;
+  border-bottom: 1px solid #dfdfdf;
+  font-family: 'quicksanddash', sans-serif;
+  font-weight: bold;
 }
