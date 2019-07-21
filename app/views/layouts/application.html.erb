@@ -37,7 +37,13 @@
     
     <br class="clear" />
 
+    <!--Section to print out a warning sign if incorrect data entered into form-->
     <div class="container">
+      <% if flash[:error].present? %>
+        <div class="col-10 offset-1 alert alert-danger">
+          <%= flash[:error].html_safe %>
+        </div>
+      <% end %>
       <%= yield %>
     </div>
 
@@ -45,7 +51,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-             <%= link_to "This isn't enough, I need more", "root", class: 'next-quote' %>
+             <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly hacked by <a href="https://www.edenforma.com/">Jason McBride</a><br />
