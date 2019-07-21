@@ -12,7 +12,7 @@
 
   <body>
     <header class="row">
-      <div class="col-3">
+      <div class="col-2">
         <div class="circle">
           <br />
           You know
@@ -22,7 +22,7 @@
           To code
         </div>
       </div>
-      <div class="col-4 slogan">
+      <div class="col-5 slogan">
         Splurting out unsolicited advice since 2019
       </div>
       <div class="col-5 links">
@@ -35,6 +35,24 @@
     
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+             <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Proudly hacked by <a href="https://www.edenforma.com/">Jason McBride</a><br />
+              Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>
