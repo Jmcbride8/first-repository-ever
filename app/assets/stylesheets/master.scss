@@ -55,6 +55,11 @@ h1 {
   font-size: 48;
 }
 
+h2 span {
+  color: #94928e;
+  font-family: 'quicksandlight', sans-serif;
+}
+
 
 .links a {
   color: black;
@@ -83,4 +88,18 @@ h1 {
 
 .about {
   font-family: 'quicksandbold', sans-serif;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal{
+  font-family: 'Quicksandbold', sans-serif;
+}
+
+::selection {
+  background-color: #f84342;
 }
